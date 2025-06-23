@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'cinizel', sarif;
+}
+
+.navbar{
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    transition: 0.5s;
+
+}
+
+.navbar.bg{
+    background: white;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.item-list{
+    margin: 10px;
+}
+
+.link{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(150, 121, 41);
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.navbar.bg .link{   
+    opacity: 0.5;
+    color: #927804;
+}
+
+.link.active, .link:hover, .navbar.bg .link:hover .link.active{
+    opacity: 1;
+}
+
+.link:hover{
+    color: rgb(0, 0, 0);
+}
+
+.link.active{
+    color:  black;
+}
+
+
+.product-card{
+    border: 15px solid rgb(150, 121, 41);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    background: rgb(173, 146, 23);
+}
+
+.product-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+/* 
+.product-name{
+    position: relative;
+    color: white;
+    object-position: right;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    /* bottom: 20px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s; 
+}*/
+
+
+/* .product-card:hover .product-name{
+    opacity: 1;
+}
+
+.product-card:hover .product-img{
+    opacity: 0.5;
+} */
+
+
+/* Portfolio */
+.comparative-section {
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-around; */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comparison-item {
+    flex: 1;
+    height: 100vh;
+    margin-top: 60px;
+    text-align: center;
+    padding: 10px;
+    /* border: 2px solid #000000; */
+    /* border-radius: 8px; */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+.comparison-item:hover .comparative-section{
+    background-color: 0 4px 6px rgba(0, 0, 0, 0.1);;
+}
+
+.comparison-item h2{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.comparison-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.components{
+    color: black;
+    font-family: 'lato', sans-serif;
+    font-size: 30px;
+    
+}

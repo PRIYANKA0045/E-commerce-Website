@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'cinizel', sarif;
+}
+
+.navbar{
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    transition: 0.5s;
+
+}
+
+.navbar.bg{
+    background: white;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.item-list{
+    margin: 10px;
+}
+
+.link{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(150, 121, 41);
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.navbar.bg .link{   
+    opacity: 0.5;
+    color: #927804;
+}
+
+.link.active, .link:hover, .navbar.bg .link:hover .link.active{
+    opacity: 1;
+}
+
+.link:hover{
+    color: rgb(0, 0, 0);
+}
+
+.link.active{
+    color:  black;
+}
+
+.contact-section{
+    margin-top: 200px;
+    background-size: cover;
+    justify-items: center;
+    font-family: 'lato', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.contact-section p{
+    color: black;
+
+}
+.contact-section span{
+    color: rgb(163, 141, 41);
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    gap: 15px;
+  }
+  
+  .contact-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 250px;
+    justify-content: center;
+  }
+  
+  .contact-link:hover {
+    background-color: #0078ff;
+    border-color: #0078ff;
+    color: #fff;
+  }
+  
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
